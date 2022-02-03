@@ -4,8 +4,8 @@ jobs:
     docker:
       - image: ana12334/dockerimage:aman
          auth
-          username: ana12334
-          password: ana@12345
+           username: ana12334
+           password: ana@12345
 
     steps:
       - checkout
