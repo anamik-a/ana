@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: ana12334/dockerimage:aman
-         auth
+         auth:
            username: ana12334
            password: ana@12345
 
