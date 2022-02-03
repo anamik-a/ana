@@ -1,0 +1,12 @@
+version:2
+jobs:
+  build:
+    docker:
+      - image: ana12334/dockerimage:aman
+        auth
+          username: ana12334
+          password: $DOCKERHUB_PASSWORD
+
+    steps:
+      - checkout
+      - run: sudo docker run -d -p 80:80 ana12334/dockerimage:aman --name aman
