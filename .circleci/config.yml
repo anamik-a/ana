@@ -1,6 +1,7 @@
 version: 2.1
 jobs:
   build:
+    machine: true
     docker:
       - image: ana12334/dockerimage:aman
         auth:
