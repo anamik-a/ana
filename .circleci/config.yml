@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - checkout
-      - run: sudo docker build -t aman .
+      - run: docker build -t aman .
       - run: sudo docker tag ana12334/dockerimage:aman:latest aman:v6
       - run: sudo docker push ana12334/dockerimage:aman:v6
 workflows:
